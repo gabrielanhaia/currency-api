@@ -13,9 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('transaction', 'TransactionController@processTransaction');
 
 // Mocked endpoints for the banks (Brazilian and Irish bank).
 Route::post('brazilian-bank/make-transfer', function () {

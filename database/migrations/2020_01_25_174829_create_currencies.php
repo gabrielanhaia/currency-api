@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 /**
  * Class CreateCurrencies responsible for creating the table that stores the currencies available.
+ *
+ * @author Gabriel Anhaia <anhaia.gabriel@gmail.com>
  */
 class CreateCurrencies extends Migration
 {

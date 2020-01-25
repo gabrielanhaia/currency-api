@@ -22,8 +22,8 @@ class CreateCountries extends Migration
             $table->bigIncrements('id');
             $table->string('name', 500)->nullable(false);
             $table->string('initial', 4)->nullable(false)->index('index_country_initial');
-            $table->softDeletes()->index('index_country_deleted_at');
             $table->timestamps();
+            $table->softDeletes()->index('index_country_deleted_at');
         });
     }
 

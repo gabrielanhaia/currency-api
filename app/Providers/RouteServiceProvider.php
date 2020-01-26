@@ -16,6 +16,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected $namespace = 'App\Http\Controllers';
 
+    /** @var string $apiNamespace */
+    protected $apiNamespace ='App\Http\Controllers\Api';
+
     /**
      * The path to the "home" route for your application.
      *
@@ -72,9 +75,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::prefix('api')
-             ->middleware('api')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/api.php'));
+        Route::group([
+            'middleware' => ['api', 'api_version:v1'],
+            'namespace'  => "{$this->apiNamespace}\V1",
+            'prefix'     => 'api/v1',
+        ], function ($router) {
+            require base_path('routes/api_v1.php');
+        });
     }
 }

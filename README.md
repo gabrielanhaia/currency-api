@@ -49,6 +49,55 @@ Here are the repositories that are used as a dependency of this project:
 4. I am using Soft Deletes to don't lost transactions deleted in the past (they are really important data).
 5. The first thing I did was a board (trello to organize the tasks to do). After I modulated the database (I can share it with you).
 
+## Tests
+
+I didn't implement all unit tests, there are more unit tests on the packages (integrations). But there are a few important tests that could be checked.
+
+Running the tests: `php vendor/bin/phpunit`
+
+## Running the project without docker
+
+1. For some reason the Guzzle Http can't access the same server when we are using (PHP built in / php artisan serve).
+So I recommend that you install in you machine Apache or Nginx and clone the folder inside your web directory. The index should be the folder *public*.
+
+2. Copy the file *.env.example* to *.env* and change the variables bellow:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=currency_fair
+DB_USERNAME=root
+DB_PASSWORD=root
+
+API_BRAZILIAN_BANK_BASE_URL=http://localhost:8888/api/v1
+API_IRISH_BANK_BASE_URL=http://localhost:8888/api/v1
+
+Note: The URL of the APIS should be the same as the server running.
+
+3. Run the command `composer install`
+4. Run `php artisan migrate`
+5. Enjoy :)
+
+## Running the project by Docker
+
+1. Access the folder *laradock* and run: <br>
+```docker-compose up -d nginx mysql phpmyadmin  workspace```
+
+2. Copy the file *.env.example* to *.env* and change the variables bellow:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=currency_fair
+DB_USERNAME=root
+DB_PASSWORD=root
+
+API_BRAZILIAN_BANK_BASE_URL=http://localhost:8888/api/v1
+API_IRISH_BANK_BASE_URL=http://localhost:8888/api/v1
+
+Note: The URL of the APIS should be the same as the server running.
+
+3. Run the command `composer install`
+4. Run `php artisan migrate`
+5. Enjoy :)
 
 ## Notes
 

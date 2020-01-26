@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Integration Banks
+        App\Providers\IntegrationIrishBankServiceProvider::class,
+        App\Providers\IntegrationBrazilianBankServiceProvider::class,
     ],
 
     /*

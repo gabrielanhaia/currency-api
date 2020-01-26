@@ -28,6 +28,7 @@ class Transaction extends Model
         'rate',
         'datetime_transaction',
         'country_id',
+        'is_processed',
         'created_at',
         'updated_at',
         'deleted_at'

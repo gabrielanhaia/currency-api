@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Api\V1;
 
+use App\Rules\DateTimeTransaction;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
@@ -35,6 +36,8 @@ class ProcessTransactionRequest extends FormRequest
             'currencyTo' => 'required|string',
             'amountSell' => 'required|numeric',
             'amountBuy' => 'required|numeric',
+            'rate' => 'required|numeric',
+            'timePlaced' => ['required', new DateTimeTransaction],
             'originatingCountry' => 'required|string'
         ];
     }

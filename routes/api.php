@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('transaction', 'TransactionController@processTransaction');
+Route::post('transaction', 'Api\V1\TransactionController@processTransaction');
 
 // Mocked endpoints for the banks (Brazilian and Irish bank).
 Route::post('brazilian-bank/make-transfer', function () {

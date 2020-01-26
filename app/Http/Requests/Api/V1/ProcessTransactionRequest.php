@@ -30,12 +30,12 @@ class ProcessTransactionRequest extends FormRequest
     public function rules()
     {
         return [
-            'usedId' => 'required|integer',
+            'userId' => 'required|numeric',
             'currencyFrom' => 'required|string',
             'currencyTo' => 'required|string',
             'amountSell' => 'required|numeric',
             'amountBuy' => 'required|numeric',
-            'country_origin' => 'required|string'
+            'originatingCountry' => 'required|string'
         ];
     }
 }

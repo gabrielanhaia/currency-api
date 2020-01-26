@@ -24,8 +24,8 @@ Another good advantage of developing on packages is that we could easily rewrite
 
 Here are the repositories that are used as a dependency of this project:
 
-(Integration Irish Bank)[https://github.com/gabrielanhaia/currency-integration-irish-bank/blob/master/README.md]
-(Integration Brazilian Bank)[https://github.com/gabrielanhaia/currency-integration-brazilian-bank/blob/master/README.md]
+[Integration Irish Bank](https://github.com/gabrielanhaia/currency-integration-irish-bank/blob/master/README.md)
+[Integration Brazilian Bank](https://github.com/gabrielanhaia/currency-integration-brazilian-bank/blob/master/README.md)
 
 ## Fundamental things for the project 
 

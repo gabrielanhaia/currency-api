@@ -55,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gabrielanhaia/currency-integration-irish-bank.git",
-                "reference": "f3b870adcb575201676cc8310881c0c269247e63"
+                "reference": "76e1bffc445a0103e3d5c87bde2ddb5e07be1c13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gabrielanhaia/currency-integration-irish-bank/zipball/f3b870adcb575201676cc8310881c0c269247e63",
-                "reference": "f3b870adcb575201676cc8310881c0c269247e63",
+                "url": "https://api.github.com/repos/gabrielanhaia/currency-integration-irish-bank/zipball/76e1bffc445a0103e3d5c87bde2ddb5e07be1c13",
+                "reference": "76e1bffc445a0103e3d5c87bde2ddb5e07be1c13",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +90,7 @@
                 }
             ],
             "description": "The integration example with a Brazilian bank.",
-            "time": "2020-01-25T22:48:51+00:00"
+            "time": "2020-01-26T13:50:38+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

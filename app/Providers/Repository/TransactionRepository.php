@@ -2,6 +2,8 @@
 
 namespace App\Providers\Repository;
 
+use App\Models\Country;
+use App\Models\Currency;
 use App\Models\Transaction;
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +23,7 @@ class TransactionRepository extends ServiceProvider
     public function boot()
     {
         $this->app->bind(\App\Repositories\TransactionRepository::class, function ($app) {
-            return new \App\Repositories\TransactionRepository(new Transaction);
+            return new \App\Repositories\TransactionRepository(new Transaction, new Country, new Currency);
         });
     }
 }

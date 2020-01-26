@@ -41,4 +41,34 @@ class Transaction extends Model
         'deleted_at',
         'datetime_transaction'
     ];
+
+    /**
+     * Return the currency-to related to the transaction.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function currencyFrom()
+    {
+        return $this->hasOne(Currency::class, 'id', 'currency_id_from');
+    }
+
+    /**
+     * Return the currency-to related to the transaction.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function currencyTo()
+    {
+        return $this->hasOne(Currency::class, 'id', 'currency_id_to');
+    }
+
+    /**
+     * Return the country origin from the transaction.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function countryOrigin()
+    {
+        return $this->hasOne(Country::class, 'id', 'country_id');
+    }
 }

@@ -175,9 +175,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        // Integration Banks
+        // Integration Banks (Currency Fair).
         App\Providers\IntegrationIrishBankServiceProvider::class,
         App\Providers\IntegrationBrazilianBankServiceProvider::class,
+
+        // Repositories (Currency Fair).
+        App\Providers\Repository\TransactionRepository::class
     ],
 
     /*

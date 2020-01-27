@@ -17,7 +17,7 @@ Following the document, I decided to create a problem to solve and show my knowl
 10. Clean Code and PSRs.
 
 
-*DONT FORGET TO LOOK AT THESE TWO PACKAGES*<br>
+*DONT FORGET TO LOOK AT THESE TWO PACKAGES (They are part of the test)*<br>
 [Integration Irish Bank](https://github.com/gabrielanhaia/currency-integration-irish-bank/blob/master/README.md)
 <br>
 [Integration Brazilian Bank](https://github.com/gabrielanhaia/currency-integration-brazilian-bank/blob/master/README.md)

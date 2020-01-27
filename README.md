@@ -49,6 +49,29 @@ Here are the repositories that are used as a dependency of this project:
 4. I am using Soft Deletes to don't lost transactions deleted in the past (they are really important data).
 5. The first thing I did was a board (trello to organize the tasks to do). After I modulated the database (I can share it with you).
 
+## Technologies/Methodologies
+
+**PHP 7.3:** I decided to use PHP because that is the role and I want to show all my knowledge about it. Besides that, all of the benefits of using PHP in an application. For sure I know that for this type of application maybe it wouldn't be the best option.
+
+**MySQL/MariaDB**: I was thinking about using a no-SQL database, maybe it could make sense in for the future of the application, but after analyzing the POST JSON  (test example) and maybe there are loads of relations, so I decided to use the MySQL that I have more knowledge. In a real application, I would discuss it with the team. Anyway, I am implementing repositories, so it would be easy to change the database if it was necessary.
+
+**Laravel:** I decided to use the Laravel framework because I believe it is the consolidated framework in PHP at the moment and with the largest community of PHP developer, so we have more developers using it, more packages developed and it is easier for the company who maintain the project to hire people.
+
+**Docker:** I am using docker because I can version the infrastructure in the code. There are many more reasons like for example for new developers to start working on the project, just a few commands and everything is working.
+
+**Composer:** The Processor and Integrations were developed in external packages and used as dependency on the main project. We have loads of benefits on this way.
+
+**PHPUnit:** I am using the PHPUnit for writing the unit tests on the application.
+
+**CircleCi:** The CI is running on CircleCI (PHPUnit...)
+
+**Trello:** I tried to follow the scrum principles (actually planning and using the kanban) to keep the project organized. In the cards, there are the number of the issues on GitHub.
+
+**PSRs:** I am following the PSR's for a clean code.
+
+** Another technologies:** GitHub, GIT
+
+
 ## Tests
 
 I didn't implement all unit tests, there are more unit tests on the packages (integrations). But there are a few important tests that could be checked.
